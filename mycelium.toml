@@ -6,8 +6,8 @@ tags    = ["caddy", "tailscale", "fork"]
 # Fork-only files are kept to a minimum so the fix branch stays a clean one-commit diff for
 # upstream. A fork of someone else's project stays off the lockyc profile README.
 [fleet]
-exempt      = ["readme", "claudemd", "gitignore", "hookhost", "hookspath", "justfile", "roadmap", "profile", "deep-audit"]
-exempt_note = "upstream fork carrying one fix; fork-only surface kept minimal"
+exempt      = ["readme", "claudemd", "gitignore", "hookhost", "hookspath", "justfile", "roadmap", "profile", "deep-audit", "license"]
+exempt_note = "upstream fork carrying one fix; fork-only surface kept minimal, and it keeps upstream's Apache-2.0 licence"
 
 [github]
 description = "A highly experimental exploration of integrating Tailscale and Caddy."
