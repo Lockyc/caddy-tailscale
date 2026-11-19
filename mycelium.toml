@@ -1,0 +1,14 @@
+name    = "caddy-tailscale"
+summary = "The lockyc fork of tailscale/caddy-tailscale, carrying the fix for a tailscaled connection leak in Auth.Authenticate; substrate's Caddy builds from its fix/auth-localclient-caching branch until the fix lands upstream"
+status  = "active"
+tags    = ["caddy", "tailscale", "fork"]
+
+# Fork-only files are kept to a minimum so the fix branch stays a clean one-commit diff for
+# upstream. A fork of someone else's project stays off the lockyc profile README.
+[fleet]
+exempt      = ["readme", "claudemd", "gitignore", "hookhost", "hookspath", "justfile", "roadmap", "profile", "deep-audit"]
+exempt_note = "upstream fork carrying one fix; fork-only surface kept minimal"
+
+[github]
+description = "A highly experimental exploration of integrating Tailscale and Caddy."
+topics      = []
